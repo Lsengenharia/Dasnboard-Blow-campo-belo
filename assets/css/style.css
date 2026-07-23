@@ -232,3 +232,13 @@ footer {
     color: #777;
     font-size: 0.9rem;
 }
+
+.pdf-actions button:hover {
+    background-color: #c0392b;
+}
+
+@media print {
+    .pdf-actions {
+        display: none !important;
+    }
+}
