@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -35,6 +37,12 @@
                 <span>Não informada</span>
             </div>
         </header>
+
+        <div class="pdf-actions" style="text-align: center; margin-bottom: 20px;">
+            <button onclick="gerarPDF()" style="padding: 12px 30px; font-size: 1.1rem; background-color: #e74c3c; border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; transition: background 0.3s;">
+                Gerar PDF
+            </button>
+        </div>
 
         <main>
             <section class="summary-cards">
